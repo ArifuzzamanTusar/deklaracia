@@ -1,25 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/main/main.css">
-  
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+
+    <title>filter</title>
+</head>
+
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img width="150px" src="images/deklarácia.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,12 +30,12 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Kontakt</a>
                         </li>
-    
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false"><img width="80px" height="50px"
                                     src="images/tree.png" alt=""></a>
-    
+
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Tvoj strom</a></li>
                                 <li>
@@ -90,14 +93,148 @@
         </nav>
     </header>
     <section>
-        <form action="">
-            <div class="uppersection">
-                
+        <div class="container">
+            <form action="">
+                <div class="">
+                    <div class="uppersection d-flex justify-content-center mt-5">
+                        <div class="form-check mr-5 border border-secondary">
+                            <input class="form-check-input border border-secondary" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Tema
+                            </label>
+                        </div>
+                        <div class="form-check mr-5  border border-secondary">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Produkt
+                            </label>
+                        </div>
+                        <div class="form-check mr-5 border border-secondary">
+                            <input class="form-check-input border border-secondary" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Bytost
+                            </label>
+                        </div>
+                        <div class="form-check mr-5  border border-secondary">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Spolocnost
+                            </label>
+                        </div>
+                        <div class="form-check mr-5  border border-secondary">
+                            <input class="form-check-input" type="checkbox" value="" id="">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Udalost
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="search  mt-5">
+                        <div class="input-group ">
+                            <input type="search" class="form-control rounded" placeholder="pravilo" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-primary">Vyhladaj</button>
+                          </div>
+                                
+                    </div>
+
+
+                </div>
+                <div class="maiddl">
+                    <div class="form-check mr-5 border border-secondary w-25">
+                        <input class="form-check-input border border-secondary" type="checkbox" value="" id="">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            moje
+                        </label>
+                    </div>
+                    <div class="form-check mr-5  border border-secondary w-25">
+                        <input class="form-check-input" type="checkbox" value="" id="">
+                        <label class="form-check-label  w-30" for="flexCheckChecked">
+                          iba v deklaracii 22
+                        </label>
+                    </div>
+                    <div class="inputgrp mt-5">
+                        <div class="form-group row">
+                            <label for="colFormLabelSm" class="col-sm-1 ">Miesto</label>
+                            <div class="col-sm-2">
+                              <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Bratislava">
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2">
+                            <label for="colFormLabelSm" class="col-sm-1 ">tag</label>
+                            <div class="col-sm-2">
+                              <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Hospodarstvo">
+                            </div>
+                        </div>
+
+                            
+
+                    </div>
+                    <div class="selector mt-5">
+                        <p>Kategorie: Hospodarstvo/ Obchod/ Kadernictvo</p>
+                        <select class="custom-select w-25">
+                            <option selected>Hospodarstvo</option>
+                            <option value="1">option-1</option>
+                            <option value="2">option-2</option>
+                            <option value="3">option-3</option>     
+                          </select>
+                          
+                    </div>
+                    <div class="selector2 mt-2">
+                        <select class="custom-select w-25">
+                            <option selected>Obchod</option>
+                            <option value="1">option-1</option>
+                            <option value="2">option-2</option>
+                            <option value="3">option-3</option>     
+                          </select>
+                    </div>
+                    <div class="selector3 mt-2">
+                        <select class="custom-select w-25">
+                            <option selected>Kadernictvo</option>
+                            <option value="1">option-1</option>
+                            <option value="2">option-2</option>
+                            <option value="3">option-3</option>     
+                          </select>
+                    </div>
+
+                </div>
+                <button type="button" class="btn btn-primary mt-5">Pridaj filter</button>
+            </form>
+            
+        </div>
+    </section>
+    <section class="container">
+        <footer class="mt-5">
+            <div class="">
+                <p>Vysledky vyhladavania:</p>
+            </div>
+            <div class="d-flex">
+                <p class="mr-5">Pravilo stroj zdravia</p>
+                <p class="mr-5">tema</p>
+                <p class="mr-5 mr-25"><a href="https://docs.google.com/document/d/1tqKzr0Jh5aveXWgPuG4EU10p-">https://docs.google.com/document/d/1tqKzr0Jh5aveXWgPuG4EU10p-</a></p>
 
             </div>
-        </form>
+            <div class="d-flex">
+                <p class="mr-5">Pravilo workshop</p>
+                <p class="mr-5">udalost</p>
+                <p class="mr-5">Bratislava, SK</p>
+                <p class="mr-5">3.3.2022 18.00 - 20.00</p>
+            </div>
+            <div class="d-flex">
+                <p class="mr-5">Tibiho Pravilo</p>
+                <p class="mr-5">produkt</p>
+                <p class="mr-5">Tunbridge Wells, UK</p>
+                
+            </div>
+
+        </footer>
+    </section>
+    <section>
+        <div class="map-area">
+            <img class="w-100" src="images/map.png" alt="">
+        </div>
     </section>
 
-   
-  </body>
+
+</body>
+
 </html>
